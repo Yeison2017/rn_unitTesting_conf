@@ -7,8 +7,8 @@ import {
 describe("Pruebas en 06-deses-obj", () => {
   test("usContext debe de retornar un objeto", () => {
     const context: IUsContext = {
-      clave: "",
-      edad: 0,
+      clave: "12345",
+      edad: 15,
     };
 
     const data: IUsContextResponse = usContext(context);
@@ -17,7 +17,7 @@ describe("Pruebas en 06-deses-obj", () => {
       nombreClave: context.clave,
       anios: context.edad,
       latlng: {
-        lat: 14.1232,
+        lat: 14.123,
         lng: -12.3232,
       },
     });
